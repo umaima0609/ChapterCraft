@@ -1,0 +1,344 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chapter Craft</title>
+  <!-- icons  start-->
+  <link rel="icon" href="./image/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- icon Ends -->
+
+  <!-- StyleSheet start here -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./chapter-craft.css">
+
+  <!-- StyleSheet End here -->
+
+  <!-- Fonts Start here -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <!-- Fonts Start here -->
+
+ <!-- Google-Font Link -->
+ <link
+ href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@200;300;400;600;700;800;900&display=swap"
+ rel="stylesheet">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+ 
+</head>
+
+<body >
+ 
+
+
+    <!-- navbar start here -->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top h-20" style="background-color: #1a282e;">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex" href="./index.html" style="color: white;">
+        <img src="./image/logo.png" alt="Logo" width="70" height="50" class="d-inline-block h-20 align-text-top ">
+
+        <div class="d-flex flex-column mt-6 ">
+          <h1 class="logo-margin mb-0 fs-6">ChapterCraft</h1>
+          <h1 class="fs-6 fw-bold logo-color">Books</h1>
+        </div>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 300px;">
+        <ul class="navbar-nav text-white">
+          <li class="nav-item">
+            <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#aboutUs">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contactUs">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#bookStore">BookStore</a>
+          </li>
+        </ul>
+        <form class="d-flex " role="search" style="margin-left: 330px;">
+          <button class="btn btn-outline-success " type="button" id="signoutbutton">Sign Out</button>
+
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End here -->
+
+
+  <!-- main slides start here -->
+  <div class="main-slides">
+    <div class="row mt-5">
+      <div class="col mt-5">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide w-100 contactUs" data-bs-ride="carousel"
+          data-bs-pause="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <div class="w-100 d-flex justify-content-evenly">
+                <div class="m-5">
+                  <div class="m-3">
+                    <h2 class="logo-color text-4xl">ChapterCraft_</h2>
+                    <h1 class="banner-font text-4xl">The Best <span class="logo-color">Online</span>
+                      Book <span class="logo-color">Shop</span></h1>
+                    <p class="fw-lighter mt-3 d-none d-md-block">Embark on a literary adventure at ChapterCraft, where passion intertwines with pages. We're dedicated to providing a thoughtfully curated array of books, tailored to suit every reader's palate. Join us on a delightful journey through the realms of imagination and knowledge.</p>
+                    <a href="#aboutUs"><button class="btn me-3 mt-4">Read More!</button></a>
+                  </div>
+                </div>
+                <img src="./image/slider-image(4).jpg" alt="" class="d-none d-lg-block slider-image " height="400px">
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <div class="w-100 d-flex justify-content-evenly">
+                <div class="m-5">
+                  <div class="m-3">
+                    <h1 class="text-4xl ">Be a literary <span class="logo-color"> Influencer!</span></h1>
+                    <h1 class="banner-font1 mt-5 d-none d-md-block text-4xl">Add Book to our shelves and <span
+                        class="logo-color">Inspire</span>
+                      others.. </h1>
+                    <!-- =======AddBookBtn Homepage to trigger modal ======= -->
+                    <a href="./BookForm.html"><button class="btn me-3 mt-4 " id="addBookBtn1Home">Add Book!</button></a> 
+                  </div>
+                </div>
+                <img src="./image/slider-image-(2).jpg" alt="" class=" d-none d-lg-block slider-image" height="400px" width="650px">
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <div class="w-100 d-flex justify-content-evenly">
+                <div class="m-5">
+                  <div class="m-3">
+                    <h1 class="text-4xl">Dive into <span class="logo-color"> Books</span> anywhere,  <span class="logo-color">anytime!</span></h1>
+                    <h1 class="banner-font1 mt-5 d-none d-md-block text-4xl">Read Online for instant <span
+                        class="logo-color">Literary
+                        Bliss!</span>
+                    </h1>
+                    <a href="#bookStore"><button class="btn me-3 mt-4">Read Online!</button></a>
+                  </div>
+                </div>
+                <img src="./image/slider-image(3).jpg" alt="" class=" d-none d-lg-block slider-image" height="400px">
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <div class="w-100 d-flex justify-content-evenly">
+                <div class="m-5">
+                  <div class="m-3">
+                    <h1 class="text-4xl"><span class="logo-color">Shop now</span> and <span class="logo-color">brings</span> home <span class="logo-color">the Magic!</span></h1>
+                    <h1 class="banner-font1 mt-5 d-none d-md-block text-4xl">Your next favourite book awaits in our <span
+                        class="logo-color">store!</span>
+                    </h1>
+                    <a href="#bookStore"><button class="btn me-3 mt-4">Shop Now!</button></a>
+                  </div>
+                </div>
+                <img src="./image/slider-image-(1).jpg" alt="" class="  d-none d-lg-block slider-image" height="400px" width="650px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- main slides End here -->
+
+  
+
+
+  <!-- About section Start -->
+  <div class=" mt-lg-5" id="aboutUs">
+    <div class="row mt-lg-5">
+      <div class="col mt-lg-5">
+        <div class="container-fluid aboutUs">
+          <div class="row mt-lg-5">
+            <div class="col-12">
+              <div class="card p-0">
+                <div class="card-body d-md-flex justify-content-end">
+                  <div class="w-50 me-2 card-AboutUS">
+                    <h3 class="card-title logo-color text-3xl">About - Chapter Craft</h3>
+
+                    <p class="card-text text-dark aboutUS-font ">Welcome to Chapter Craft, where the magic of books
+                      meets a carefully chosen collection of stories. Our journey began with a simple idea: books can
+                      spark your imagination, open your mind, and make everyone fall in love with words.
+                      <br>
+
+                      At Chapter Craft, we're not just a bookstore. We want to be a cozy place for all kinds of readers.
+                      What makes us special is our effort to build a community that shares a love for reading. <br>
+
+
+                      <span class="d-none d-lg-block">Our team is made up of people who love books and have one goal -
+                        to make the world a brighter place through reading. Thank you for being a part of our story.
+                        Join us at Chapter Craft, where each book is a new adventure waiting for you. </span> <br>
+
+
+                      Happy reading! <br>
+                      The Chapter Craft Team
+
+                    </p>
+                  </div>
+
+                </div>
+                <div class="w-50  d-md-block">
+                  <img src="./image/about-image.png"
+                    style="width: 500px; height: 450px ; margin-top: -390px; filter: drop-shadow(10px 10px 20px #555);"
+                    alt="..." />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About section  End -->
+
+    <!-- ======= Collection Section ========== -->
+
+  <div class="row mt-lg-5" id="bookStore">
+    <div class="col mt-lg-5">
+      <div class="container mt-lg-5">
+        <div class="row mt-lg-5">
+          <div class="col mt-5">
+            <h1 class="text-center text-4xl">
+              "Explore Our <span class="logo-color">Collection </span>"
+            </h1>
+            <p class="text-center">Engage in a literary adventure while navigating our thoughtfully curated assortment at ChapterCraft Bookstore.</p>
+          </div>
+           <!-- =======My Collection=======> -->
+
+  <div id="card-container"
+    class="overflow-hidden ml-10 mb-6 mx-10 sm:ml-0 grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-0 min-[1025px]:grid-cols-2 min-[1260px]:grid-cols-4" >
+
+  </div>
+
+    <!-- =======Contact us ========== -->
+    <div class="container mt-lg-5  " id="contactUs">
+        <div class="row mt-lg-5">
+          <div class="col mt-lg-5 mx-auto ">
+            <div class="mt-5">
+              <h1 class="logo-color text-center text-4xl">Contact Us!</h1>
+              <p class=" fw-light mb-2 text-center "><span class="logo-color text-3xl" style="color: #1a282e;">Do you have any questions?</span> <br>Please
+                do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.
+              </p>
+              <div class=" w-25 mx-auto mt-5 d-flex justify-content-evenly">
+                <a class="fs-2 logo-color mx-4" href="#"><i class="bi bi-linkedin"></i></a>
+                <a class="fs-2 logo-color mx-4" href="#"><i class="bi bi-medium"></i></a>
+                <a class="fs-2 logo-color mx-4" href="#"><i class="bi bi-facebook"></i></a>
+                <a class="fs-2 logo-color mx-4" href="#"><i class="bi bi-instagram"></i></a>
+              </div>
+    
+    
+              <div class="mt-5 mb-3 mr-10 ml-10 row">
+                <div class="col">
+                  <p><label>Your Name:</label></p>
+                  <input type="text" required maxlength="50" class="form-control" id="name" name="name">
+                </div>
+                <div class="col">
+                  <p><label for="email_addr">Your Email:</label></p>
+                  <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email">
+                </div>
+              </div>
+    
+              <div class="mb-5 mr-12 ml-12">
+                <p><label for="message">Message</label></p>
+                <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+              </div>
+    
+    
+    
+              <div class="w-100 mx-auto text-center mt-5 ">
+                <button class="btn w-75 ">Post</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <div class=" w-75 mb-14 mx-auto mt-5 d-flex justify-content-evenly flex-column flex-md-row">
+        <div class="d-flex flex-column mx-3 text-center">
+          <a class="fs-2 logo-color mx-4 " href="#"><i class="bi bi-telephone-fill"></i></a>
+          <p class="">(666) 123-4567</p>
+        </div>
+        <div class="d-flex flex-column mx-3 text-center ">
+          <a class="fs-2 logo-color mx-4" href="#"><i class="bi bi-house-fill"></i></a>
+          <p class="">ChapterCraft Bookstore <br>
+            345 Reading Lane <br>
+            Booksville, Ak 8910 <br>
+            United Bibliophiles Country</p>
+        </div>
+        <div class="d-flex flex-column mx-3 text-center">
+          <a class="fs-2 logo-color mx-4" href="#"><i class="bi bi-envelope-at-fill"></i></a>
+          <p>info@chaptercraftbooks.com</p>
+        </div>
+    
+      </div>
+    
+      <!--  ========  Footer Start Here  ============= -->
+     
+      <footer>
+    
+        <div class="col p-2 mt-4">
+          <div class=" w-100 footer text-light d-flex justify-content-center align-content-center   ">
+            <p class="h-25 my-auto footer-font">Umaima_Khan © 2024. ALL RIGHTS RESERVED</p>
+          </div>
+        </div>
+      </footer>
+
+  <script src="./js/index.js" type="module"></script>
+  <script src="./js/modal.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+  crossorigin="anonymous"></script>
+<script>
+  let UserCreds = JSON.parse(sessionStorage.getItem("user-creds"));
+  let UserInfo = JSON.parse(sessionStorage.getItem("user-info"));
+
+  let SignoutBtn = document.getElementById('signoutbutton');
+
+  let Signout = () => {
+    sessionStorage.removeItem("user-creds");
+    sessionStorage.removeItem("user-info");
+    window.location.href = 'chapter-craft.html'
+  }
+
+  let CheckCreds = () => {
+
+    if (!sessionStorage.getItem("user-creds"))
+      window.location.href = 'chapter-craft.html'
+    else {
+      showPopup();
+
+
+
+    }
+
+  }
+
+
+  window.addEventListener('load', CheckCreds);
+  SignoutBtn.addEventListener('click', Signout)
+</script>
+<script>
+  function showPopup() {
+    document.getElementById('popup').style.display = 'block';
+
+    setTimeout(function () {
+      closePopup();
+    }, 7000);
+  }
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    CheckCreds();
+  });
+</script> 
+</body>
+</html>

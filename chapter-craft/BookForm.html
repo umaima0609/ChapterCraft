@@ -1,0 +1,188 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Icons Start here -->
+    <link rel="icon" href="./image/logo.png">
+    <!-- Font Awesome CDN-Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google-Font Link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- StyleSheet  Start Here-->
+    <link rel="stylesheet" href="./chapter-craft.css">
+
+    <!-- Tailwind-CDN-Link -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+    <title>Books Form</title>
+</head>
+
+<body style=" font-family: 'Montserrat', sans-serif;">
+
+    <!-- ********************* Navbar-Section ******************** -->
+
+    <!-- navbar start here -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top h-20" style="background-color: #1a282e;">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex" href="#" style="color: white;">
+                <img src="./image/logo.png" alt="Logo" width="70" height="50"
+                    class="d-inline-block h-20 align-text-top ">
+
+                <div class="d-flex flex-column ml-16 -mt-14">
+                    <h1 class="logo-margin mb-0 fs-6">ChapterCraft</h1>
+                    <h1 class="fs-6 fw-bold logo-color">Books</h1>
+                </div>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 500px;">
+                <ul class="navbar-nav text-white inline-flex  -m-12 text-center">
+                    <li class="nav-item ">
+                        <a class="nav-link active text-white ml-4" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item ml-4">
+                        <a class="nav-link text-white" href="./index.html#aboutUs">About</a>
+                    </li>
+                    <li class="nav-item ml-4">
+                        <a class="nav-link text-white" href="./index.html#contactUs">Contact</a>
+                    </li>
+                    <li class="nav-item ml-4">
+                        <a class="nav-link text-white" href="./index.html#bookStore">BookStore</a>
+                    </li>
+                </ul>
+                <form class="d-flex -mt-12 " role="search" style="margin-left: 630px;">
+                    <button class="btn btn-outline-success rounded-md  py-2 px-3" type="button" id="signoutbutton">Sign Out</button>
+
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End here -->
+    <!-- ************** Book-Form Section ************************** -->
+
+    <section>
+        <div class="grid grid-cols-1 lg:grid-cols-2 ">
+            <div class="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-5 lg:px-8">
+
+                <div class="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
+
+                    <h2 class="text-3xl font-bold leading-tight text-black sm:text-3xl">Add A New Book : </h2>
+
+                    <form action="#" id="add-book-form" class="mt-8">
+                        <div class="space-y-4">
+                            <div>
+                                <label for="" class="text-base font-medium text-black-900">Book Title</label>
+                                <div class="mt-1">
+                                    <input id="add-title"
+                                        class="flex h-10 w-full rounded-md border border-black-300 bg-transparent px-3 py-2 text-sm placeholder:text-black-400 focus:outline-none focus:ring-1 focus:ring-black-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                        type="text" placeholder="Type Book Title" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between">
+                                    <label for="" class="text-base font-medium text-black-900"> Author
+                                        Name</label>
+                                </div>
+                                <div class="mt-1">
+                                    <input id="add-author"
+                                        class="flex h-10 w-full rounded-md border border-black-300 bg-transparent px-3 py-2 text-sm placeholder:text-black-400 focus:outline-none focus:ring-1 focus:ring-black-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                        type="text" placeholder="Type Author Name" />
+                                </div>
+                            </div>
+                            <div>
+                                <label for="" class="text-base font-medium text-black-900">ImageURL</label>
+                                <div class="mt-1">
+                                    <input id="add-image" rows="4"
+                                        class="flex h-16 w-full rounded-md border border-black-300 bg-transparent px-3 py-2 text-sm placeholder:text-black-400 focus:outline-none focus:ring-1 focus:ring-black-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                        type="text" placeholder="Type Image URL" />
+                                </div>
+                            </div>
+                            <div>
+                                <label for="book-URL" class="text-base font-medium text-gray-900">Book URL</label>
+                                <div class="mt-1">
+                                    <input id="book-url" rows="4"
+                                        class="flex h-16 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-black-400 focus:outline-none focus:ring-1 focus:ring-black-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                        type="text" placeholder="Type Book URL" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button id="add-button" style="background-color: #1a282e; "
+                                class="text-white inline-flex mt-2 items-center  hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                <svg class="me-1 -ms-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                Add Your Book
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="book-list"
+                class="overflow-hidden grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-3 min-[1025px]:grid-cols-2 min-[1260px]:grid-cols-2">
+            </div>
+        </div>
+    </section>
+
+
+
+  <!--  ========  Footer Start Here  ============= -->
+     
+  <footer>
+    
+    <div class="col p-2 mt-4 text-center">
+      <div class=" w-100 footer text-light d-flex justify-content-center align-content-center   ">
+        <p class="h-25 my-auto footer-font">Umaima_Khan © 2024. ALL RIGHTS RESERVED</p>
+      </div>
+    </div>
+  </footer>
+
+    <script src="./js/BookForm.js" type="module"></script>
+    <script>
+        let UserCreds = JSON.parse(sessionStorage.getItem("user-creds"));
+        let UserInfo = JSON.parse(sessionStorage.getItem("user-info"));
+
+        let SignoutBtn = document.getElementById('signoutbutton');
+
+        let Signout = () => {
+            sessionStorage.removeItem("user-creds");
+            sessionStorage.removeItem("user-info");
+            window.location.href = 'chapter-craft.html'
+        }
+
+        let CheckCreds = () => {
+
+            if (!sessionStorage.getItem("user-creds"))
+                window.location.href = 'chapter-craft.html'
+            else {
+                showPopup();
+
+
+
+            }
+
+        }
+
+
+        window.addEventListener('load', CheckCreds);
+        SignoutBtn.addEventListener('click', Signout)
+    </script>
+    
+</body>
+
+</html>
